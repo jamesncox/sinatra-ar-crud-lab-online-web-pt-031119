@@ -28,6 +28,6 @@ class ApplicationController < Sinatra::Base
   end
   
   get "articles/:id" do 
-    @article = 
+    @article = Article.find_by()
   end 
 end
