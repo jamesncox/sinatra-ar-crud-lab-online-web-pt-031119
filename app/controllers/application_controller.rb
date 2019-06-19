@@ -18,8 +18,8 @@ class ApplicationController < Sinatra::Base
   end
   
   get '/articles/new' do 
-    # @articles = Article.new 
-    # index :new
+    @articles = Article.new 
+    index :new
   end 
   
   post "/articles" do
